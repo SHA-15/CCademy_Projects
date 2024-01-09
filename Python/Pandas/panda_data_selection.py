@@ -111,7 +111,7 @@ january_row = df_columns[df_columns.month == 'January']
 # Multiple logic statements can also be combined with "and(&)" and "or (|)", as long as each statement is within their parentheses.
 
 march_april_data = df_columns[(df_columns.month == 'March') | (df_columns.month == 'April')]
-# print(march_april_data)
+#print(march_april_data)
 
 # Another method of selecting rows with logic is with the .isin() method applied on the column of the DataFrame
 
@@ -119,7 +119,7 @@ jan_feb_mar = df_columns[df_columns.month.isin(['January', 'February', 'March'])
 #print(jan_feb_mar)
 
 
-# While working with large DataFrames and selecting a subset of the DataFrames, we end up with non-consecutive indices. This is inelegent and makes it hard to use .iloc()
+# While working with large DataFrames and selecting a subset of the DataFrames, we end up with non-consecutive indices. This is inelegent and makes it hard to use .iloc[]
 
 # The sub-set indices can be fixed with .reset_index() method. However the reset_index() method will produce a new DataFrame object with the old index as a separate column
 
@@ -158,4 +158,4 @@ frances_palmer = orders[(orders.first_name == "Frances") & (orders.last_name == 
 # Select orders by shoe_type
 comfy_shoes = orders[orders.shoe_type.isin(['clogs', 'boots', 'ballet flats'])]
 
-print(comfy_shoes)
+#print(comfy_shoes)

@@ -61,7 +61,7 @@ get_last_name = lambda x: x.split(' ')[1]
 # Lambda function introduced within the apply() function to create new column
 employee_df['last_name'] = employee_df.name.apply(get_last_name)
 
-#print(employee_df.head())
+print(employee_df.head())
 
 # We can apply lambda functions to multiple columns or along a row
 # If we use .apply() with keyword argument axis=1, the input to our lambda function will be an entire row.

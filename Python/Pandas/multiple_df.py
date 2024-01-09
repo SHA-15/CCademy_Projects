@@ -1,0 +1,4 @@
+# PANDAS COMMANDS TO WORK WITH MULTIPLE TABLES
+
+import pandas as pd
+
