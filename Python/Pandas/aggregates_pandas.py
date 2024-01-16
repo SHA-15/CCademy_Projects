@@ -11,6 +11,7 @@ orders = pd.read_csv('orders.csv')
 
 pricey_shoes = orders.groupby('shoe_type').price.max()
 
+print(pricey_shoes)
 #print(type(pricey_shoes))
 
 # After using groupby, we often need to clean our data. As each groupby object creates a new Series, the indices of the Series were the groupby values (such as 'shoe_type') and price being our column of values
@@ -20,7 +21,7 @@ pricey_shoes = orders.groupby('shoe_type').price.max()
 # Let us modify our previous example by including reset_index() in the calculation
 reset_series_shoes = orders.groupby('shoe_type').price.max().reset_index()
 
-#print(reset_series_shoes)
+print(reset_series_shoes)
 #print(type(reset_series_shoes))
 
 # Sometimes the calculation is more complicated than mean or count. We can use the apply() method and lambda functions. The input to a lambda function will always be a list of values
