@@ -1,0 +1,68 @@
+/* Selector {
+    Property: value;
+} */
+
+
+/* * {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+
+body {
+    background-image: url(bg.jpeg);
+    background-size: cover;
+}
+
+h2{
+    color: #F6F017;
+    text-align: center;
+    border: 5px solid rgba(157, 153, 0, 0.5);
+    cursor: pointer;
+}
+
+p {
+    color: white;
+    /* text-decoration: underline;
+    text-transform: uppercase; */
+    line-height: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 125%;
+    font-family: 'Poiret One', cursive;
+}
+
+img {
+    float: left;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    color: white;
+    font-family: "Poiret One", cursive;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 180%;
+}
+
+li {
+    color: white;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
+
+/* .webtext {
+    border: 2px dashed darkcyan;
+}
+
+.active {
+    color: white;
+} */
+
+
+
+
